@@ -1,4 +1,3 @@
-
 {
   "name": "academic-showcase",
   "private": true,
@@ -11,7 +10,8 @@
   },
   "dependencies": {
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "react-modal": "^3.16.3"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

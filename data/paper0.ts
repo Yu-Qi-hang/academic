@@ -52,6 +52,36 @@ export const paper0: PaperData = {
           text: '(a) shows the composition of user interaction data. (b) and (c) illustrate previous LLM-based recommendations and our ThinkRec, respectively. (d) compares ThinkRec with baselines in three real-world datasets.'
         }
       ]
+    },
+    {
+      id: "method",
+      title: "Method",
+      contents:[
+        {
+          type: ContentType.IMAGE,
+          src: "assets/paper0/method.png",
+        },
+        {
+          type: ContentType.TEXT,
+          text: 'Overview of the proposed ThinkRec. Keywords are extracted from the description of items with the pretrained PolyLM-Qwen-7B. Reasoning data is synthesized with a reasoning model from a sample of training data. Global LoRA is trained with total data, and base LoRAs are tuned on it with data grouping by user feature. The used LoRA, fusioned or single, is determined by the similarity between the user feature and LoRA representations.'
+        }
+      ]
+    },
+    {
+      id: "result",
+      title: "Tables",
+      contents: [
+        {
+          type: ContentType.IMAGE_GRID,
+          gridConfig: [1, 2], 
+          mediaItems: [
+            { type: 'IMAGE', src: 'assets/paper0/performance.png', caption: 'Comparison of prediction performance between ThinkRec and the baselines across the three evaluation datasets. The best results are highlighted in bold and sub-optimal results are underlined.' },
+            { type: 'IMAGE', src: 'assets/paper0/quality.png', caption: 'Quality evaluation of generated reasons. "M" refers to "METEOR" and "B" refers to "BLEURT".' },
+            { type: 'IMAGE', src: 'assets/paper0/Ablation.png', caption: 'Ablation studies of key components in ThinkRec. "N" refers to "NDCG", "M" refers to "MAP".' },
+          ],
+          caption: "Gallery with different number of media."
+        }
+      ]
     }
   ],
   bibtex: `@misc{yu2026thinkrecthinkingbasedrecommendationllm,

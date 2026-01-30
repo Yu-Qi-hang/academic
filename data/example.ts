@@ -15,7 +15,7 @@ export const example: PaperData = {
   affiliations: [
     // Local icons can be placed in assets/icons/
     { id: 1, name: "Stanford University", icon: 'https://www.stanford.edu/favicon.ico' },
-    { id: 2, name: "Google", icon: "assets/icons/google.ico" },
+    { id: 2, name: "Zhejiang University", icon: "assets/icons/zju.ico" },
     { id: 3, name: "MIT", icon: 'https://web.mit.edu/favicon.ico' }
   ],
   abstract: "We introduce a novel framework for robotic manipulation that leverages large-scale generative models to predict future world states and plan complex interaction sequences.",
@@ -30,28 +30,28 @@ export const example: PaperData = {
   sections: [
     {
       id: "comparison",
-      title: "Dynamic vs Static (Local Comparison)",
+      title: "IMAGE_COMPARISON",
       contents: [
         {
           type: ContentType.IMAGE_COMPARISON,
           width: '75%', 
-          src: "assets/images/compare_before.jpg",
-          srcSecondary: "assets/images/compare_after.jpg",
+          src: "https://picsum.photos/seed/p1-1/600/400",
+          srcSecondary: "https://picsum.photos/seed/p1-2/600/400",
           caption: "Comparison using local image files."
         }
       ]
     },
     {
       id: "teaser",
-      title: "Featured Demos",
+      title: "CAROUSEL",
       contents: [
         {
           type: ContentType.CAROUSEL,
           mediaItems: [
             // Example of using local video and image files
-            { type: 'VIDEO', src: 'assets/videos/teaser_1.mp4', caption: 'Behavior 1: Reaching' },
-            { type: 'IMAGE', src: 'assets/images/world_model.png', caption: 'Internal World Model State' },
-            { type: 'VIDEO', src: 'assets/videos/teaser_2.mp4', caption: 'Behavior 2: Grasping' }
+            { type: 'VIDEO', src: 'https://www.bilibili.com/video/BV1VqzZBDE5X/?spm_id_from=333.1007.top_right_bar_window_dynamic.content.click&vd_source=bab75b3ccf1b5ff4356ab5c39c33eca7' },
+            { type: 'IMAGE', src: 'https://picsum.photos/seed/p2-1/1200/600'},
+            { type: 'IMAGE', src: 'https://picsum.photos/seed/p2-2/1200/600'}
           ]
         }
       ]
@@ -61,53 +61,38 @@ export const example: PaperData = {
       contents: [
         {
           type: ContentType.IMAGE,
-          src: "assets/images/architecture_wide.jpg",
+          src: 'https://picsum.photos/seed/p3-1/1200/600',
           width: "full",
-          caption: "System overview using a local high-resolution image."
+          caption: "Image without section title."
         }
       ]
     },
     {
       id: "grid-demo",
-      title: "Local Media Gallery",
+      title: "IMAGE_GRID",
       contents: [
         {
           type: ContentType.IMAGE_GRID,
           gridConfig: [2, 3], 
           mediaItems: [
-            { type: 'IMAGE', src: 'assets/images/result_1.png'},
-            { type: 'VIDEO', src: 'assets/videos/result_1.mp4' }, 
-            { type: 'IMAGE', src: 'assets/images/result_2.png', caption: 'Step 2' },
-            { type: 'VIDEO', src: 'assets/videos/result_2.mp4', caption: 'Step 3' },
-            { type: 'IMAGE', src: 'assets/images/result_3.png' } 
+            { type: 'IMAGE', src: 'https://picsum.photos/seed/p4-1/600/400'},
+            { type: 'VIDEO', src: 'https://youtu.be/s3wNuru4U0I?si=uDzwWeCV7TZ8Mysl'}, 
+            { type: 'IMAGE', src: 'https://picsum.photos/seed/p4-2/300/200', caption: 'Step 1' },
+            { type: 'VIDEO', src: 'https://www.bilibili.com/video/BV1V44y1K7ss/?spm_id_from=333.337.search-card.all.click', caption: 'Step 2' },
+            { type: 'IMAGE', src: 'https://picsum.photos/seed/p4-3/300/200', caption: 'Step 3' } 
           ],
-          caption: "Gallery using local assets stored in the repository."
-        }
-      ]
-    },
-    {
-      id: "method",
-      title: "Methodology",
-      contents: [
-        {
-          type: ContentType.IMAGE,
-          src: "assets/images/method_diagram.svg",
-          caption: "System Architecture (Local SVG)."
-        },
-        {
-          type: ContentType.TEXT,
-          text: "Our method uses action-conditional video prediction to hallucinate futures and optimize actions via MPC."
+          caption: "Gallery with different number of media."
         }
       ]
     },
     {
       id: "paper-preview",
-      title: "PDF Preview (Local)",
+      title: "PDF Preview",
       contents: [
         {
           type: ContentType.PDF,
           width: 'full',
-          src: "assets/papers/nerf_dynamic.pdf"
+          src: "https://arxiv.org/pdf/2505.15091"
         }
       ]
     }
