@@ -1,5 +1,5 @@
 import { PaperData, ContentType } from '../types';
-import intro from '../assets/paper0/intro.png';
+// import intro from '../assets/paper0/intro.png'
 export const paper0: PaperData = {
   title: "ThinkRec: Thinking-based recommendation via LLM",
   venue: {
@@ -45,7 +45,7 @@ export const paper0: PaperData = {
       contents:[
         {
           type: ContentType.IMAGE,
-          src: intro,
+          src: "assets/paper0/intro.png",
         },
         {
           type: ContentType.TEXT,
@@ -53,65 +53,6 @@ export const paper0: PaperData = {
         }
       ]
     }
-    // {
-    //   id: "teaser",
-    //   title: "Featured Demos",
-    //   contents: [
-    //     {
-    //       type: ContentType.CAROUSEL,
-    //       mediaItems: [
-    //         // Example of using local video and image files
-    //         { type: 'VIDEO', src: 'assets/videos/teaser_1.mp4', caption: 'Behavior 1: Reaching' },
-    //         { type: 'IMAGE', src: 'assets/images/world_model.png', caption: 'Internal World Model State' },
-    //         { type: 'VIDEO', src: 'assets/videos/teaser_2.mp4', caption: 'Behavior 2: Grasping' }
-    //       ]
-    //     }
-    //   ]
-    // },
-    // {
-    //   id: "no-title-section",
-    //   contents: [
-    //     {
-    //       type: ContentType.IMAGE,
-    //       src: "assets/images/architecture_wide.jpg",
-    //       width: "full",
-    //       caption: "System overview using a local high-resolution image."
-    //     }
-    //   ]
-    // },
-    // {
-    //   id: "grid-demo",
-    //   title: "Local Media Gallery",
-    //   contents: [
-    //     {
-    //       type: ContentType.IMAGE_GRID,
-    //       gridConfig: [2, 3], 
-    //       mediaItems: [
-    //         { type: 'IMAGE', src: 'assets/images/result_1.png', caption: 'Step 1' },
-    //         { type: 'VIDEO', src: 'assets/videos/result_1.mp4' }, 
-    //         { type: 'IMAGE', src: 'assets/images/result_2.png', caption: 'Step 2' },
-    //         { type: 'VIDEO', src: 'assets/videos/result_2.mp4', caption: 'Step 3' },
-    //         { type: 'IMAGE', src: 'assets/images/result_3.png' } 
-    //       ],
-    //       caption: "Gallery using local assets stored in the repository."
-    //     }
-    //   ]
-    // },
-    // {
-    //   id: "method",
-    //   title: "Methodology",
-    //   contents: [
-    //     {
-    //       type: ContentType.IMAGE,
-    //       src: "assets/images/method_diagram.svg",
-    //       caption: "System Architecture (Local SVG)."
-    //     },
-    //     {
-    //       type: ContentType.TEXT,
-    //       text: "Our method uses action-conditional video prediction to hallucinate futures and optimize actions via MPC."
-    //     }
-    //   ]
-    // }
   ],
   bibtex: `@misc{yu2026thinkrecthinkingbasedrecommendationllm,
   title={ThinkRec: Thinking-based recommendation via LLM}, 

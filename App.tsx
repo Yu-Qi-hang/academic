@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Section from './components/Section';
 import Bibtex from './components/Bibtex';
 import { paper0 } from './data/paper0';
-// import { paper1 } from './data/paper1';
 import { example } from './data/example';
 import { Profile } from './types';
 
