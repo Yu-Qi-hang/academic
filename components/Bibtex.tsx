@@ -16,7 +16,7 @@ const Bibtex: React.FC<BibtexProps> = ({ bibtex }) => {
 
   return (
     <section className="max-w-4xl mx-auto px-6 mb-20">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 serif-font">BibTeX</h2>
+      <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 serif-font text-center">BibTeX</h2>
       <div className="relative group">
         <pre className="bg-gray-50 p-6 rounded-xl overflow-x-auto text-sm md:text-base text-gray-700 font-mono border border-gray-200">
           {bibtex}

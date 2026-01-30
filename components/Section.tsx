@@ -372,7 +372,7 @@ const Section: React.FC<SectionProps> = ({ title, contents }) => {
   return (
     <section className="max-w-4xl mx-auto px-6 mb-16">
       {title && (
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-gray-100 serif-font">
+        <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 mb-8 pb-3 border-b border-gray-200 font-serif text-center">
           {title}
         </h2>
       )}
