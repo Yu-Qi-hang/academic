@@ -1,5 +1,4 @@
 import { PaperData, ContentType } from '../types';
-// import intro from '../assets/paper0/intro.png'
 export const paper0: PaperData = {
   title: "ThinkRec: Thinking-based recommendation via LLM",
   venue: {
@@ -20,7 +19,7 @@ export const paper0: PaperData = {
   ],
   affiliations: [
     { id: 1, name: 'Zhejiang University', icon: 'assets/icons/zju.ico' },
-    { id: 2, name: 'Ant Group', icon: 'assets/icons/ant.png' },
+    { id: 2, name: 'Ant Group', icon: 'assets/icons/ant.webp' },
     { id: 3, name: 'Shanghai AI Laboratory', icon: 'assets/icons/AILab.ico' }
   ],
   abstract: 'Recent advances in large language models (LLMs) have enabled more semantic-aware recommendations through natural language generation. Existing LLM for recommendation (LLM4Rec) methods mostly operate in a System 1-like manner, relying on superficial features to match similar items based on click history, rather than reasoning through deeper behavioral logic. This often leads to superficial and erroneous recommendations. Inspired by this, we propose ThinkRec, a thinking-based framework that shifts LLM4Rec from an intuitive system to a rational system. First, ThinkRec introduces a thinking activation mechanism by injecting synthetic reasoning traces, making the recommendation process resemble the Chain of Thought (CoT) reasoning of LLMs. This mechanism analyzes interaction histories, identifies user preferences, and makes decisions based on target items. Furthermore, considering the highly diverse distribution of recommendation data, we propose an instance-wise expert fusion mechanism to reduce the reasoning difficulty. By dynamically assigning weights to expert models based on users\' latent features, ThinkRec adapts its reasoning path to individual users, thereby enhancing precision and personalization. Extensive experiments on various real-world web user behavior preference datasets demonstrate that ThinkRec significantly outperforms baselines in terms of recommendation accuracy and interpretability, providing superior recommendations based on a deeper understanding of user intent and a more rigorous reasoning process.',
@@ -46,7 +45,7 @@ export const paper0: PaperData = {
       contents:[
         {
           type: ContentType.IMAGE,
-          src: "assets/paper0/intro.png",
+          src: "assets/paper0/intro.webp",
         },
         {
           type: ContentType.TEXT,
@@ -60,7 +59,7 @@ export const paper0: PaperData = {
       contents:[
         {
           type: ContentType.IMAGE,
-          src: "assets/paper0/method.png",
+          src: "assets/paper0/method.webp",
         },
         {
           type: ContentType.TEXT,
@@ -76,9 +75,9 @@ export const paper0: PaperData = {
           type: ContentType.IMAGE_GRID,
           gridConfig: [1, 2], 
           mediaItems: [
-            { type: 'IMAGE', src: 'assets/paper0/performance.png', caption: 'Comparison of prediction performance between ThinkRec and the baselines across the three evaluation datasets. The best results are highlighted in bold and sub-optimal results are underlined.' },
-            { type: 'IMAGE', src: 'assets/paper0/quality.png', caption: 'Quality evaluation of generated reasons. "M" refers to "METEOR" and "B" refers to "BLEURT".' },
-            { type: 'IMAGE', src: 'assets/paper0/Ablation.png', caption: 'Ablation studies of key components in ThinkRec. "N" refers to "NDCG", "M" refers to "MAP".' },
+            { type: 'IMAGE', src: 'assets/paper0/performance.webp', caption: 'Comparison of prediction performance between ThinkRec and the baselines across the three evaluation datasets. The best results are highlighted in bold and sub-optimal results are underlined.' },
+            { type: 'IMAGE', src: 'assets/paper0/quality.webp', caption: 'Quality evaluation of generated reasons. "M" refers to "METEOR" and "B" refers to "BLEURT".' },
+            { type: 'IMAGE', src: 'assets/paper0/Ablation.webp', caption: 'Ablation studies of key components in ThinkRec. "N" refers to "NDCG", "M" refers to "MAP".' },
           ],
           caption: "Gallery with different number of media."
         }
