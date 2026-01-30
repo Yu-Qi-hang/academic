@@ -108,9 +108,9 @@ Example:
 ## 🌍 Deploy
 
 Deploy anywhere that supports static sites:
-- [Vercel](https://vercel.com) (recommended)
+- GitHub Pages (recommended)
+- [Vercel](https://vercel.com)
 - [Netlify](https://netlify.com)
-- GitHub Pages (`npm run build` → deploy `dist/`)
 > ✨ **Pro Tip**: Customize the repository base by editing vite.config.ts.
 ---
 

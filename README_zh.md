@@ -108,9 +108,9 @@ npm run dev
 ## 🌍 部署上线
 
 支持任意静态网站托管服务：
-- [Vercel](https://vercel.com)（推荐）
+- GitHub Pages（推荐）
+- [Vercel](https://vercel.com)
 - [Netlify](https://netlify.com)
-- GitHub Pages（运行 `npm run build` 后部署 `dist/` 目录）
 
 > ✨ **小技巧**：如需自定义部署路径（如子目录），请修改 `vite.config.ts` 中的 `base` 配置。
 
