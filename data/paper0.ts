@@ -1,5 +1,5 @@
 import { PaperData, ContentType } from '../types';
-
+import intro from '../assets/paper0/intro.png';
 export const paper0: PaperData = {
   title: "ThinkRec: Thinking-based recommendation via LLM",
   venue: {
@@ -45,7 +45,7 @@ export const paper0: PaperData = {
       contents:[
         {
           type: ContentType.IMAGE,
-          src: "assets/paper0/intro.png",
+          src: intro,
         },
         {
           type: ContentType.TEXT,
