@@ -30,10 +30,10 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      # - name: MKDIR
-      #   run: mkdir public
-      # - name: Move Assets
-      #   run: mv assets public
+      - name: Prepare public/assets
+        run: |
+          mkdir -p public/assets
+          cp -r assets/* public/assets/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
