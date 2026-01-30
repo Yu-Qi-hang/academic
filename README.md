@@ -1,7 +1,7 @@
 # 🎓 Academic Showcase
 [English](README.md) | [中文](README_zh.md)
 
-A modern, responsive, and media-rich academic paper showcase built with **React 19**, **TypeScript**, and **Tailwind CSS**. Perfect for presenting research papers with support for videos, image grids, PDFs, comparisons, carousels, and more — all from local or remote assets.
+A modern, responsive, and media-rich [academic paper showcase](https://yu-qi-hang.github.io/academic/) built with **React 19**, **TypeScript**, and **Tailwind CSS**. Perfect for presenting research papers with support for videos, image grids, PDFs, comparisons, carousels, and more — all from local or remote assets.
 
 ---
 

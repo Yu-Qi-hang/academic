@@ -1,7 +1,7 @@
 # 🎓 Academic Showcase（学术成果展示站）
 [English](README.md) | [中文](README_zh.md)
 
-一个现代化、响应式且富媒体的学术论文展示网站，基于 **React 19**、**TypeScript** 和 **Tailwind CSS** 构建。支持本地或远程的视频、图片网格、PDF、对比滑块、轮播图等多种内容形式，非常适合用于展示你的研究成果。
+一个现代化、响应式且富媒体的[学术论文展示网站](https://yu-qi-hang.github.io/academic/)，基于 **React 19**、**TypeScript** 和 **Tailwind CSS** 构建。支持本地或远程的视频、图片网格、PDF、对比滑块、轮播图等多种内容形式，非常适合用于展示你的研究成果。
 
 ---
 
