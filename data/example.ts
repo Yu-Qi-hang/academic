@@ -6,6 +6,7 @@ export const example: PaperData = {
     name: "Conference 2025",
     link: "https://example.com/"
   },
+  star: false,
   authors: [
     { name: "Alpha", link: "#", affiliationIndices: [1, 2], isEqualContribution: true },
     { name: "Beta", link: "#", affiliationIndices: [1], isEqualContribution: true },
@@ -22,7 +23,7 @@ export const example: PaperData = {
   links: [
     { label: "Paper", url: "assets/paper.pdf", icon: "Paper", color: "blue" },
     { label: "ArXiv", url: "https://arxiv.org/abs/example", customIcon: "assets/icons/ArXiv.svg", icon: "Arxiv", color: "red" },
-    { label: "Code", url: "https://github.com/example/repo", icon: "Code", color: "black" },
+    { label: "Code", url: "https://github.com/Yu-Qi-hang/academic", icon: "Code", color: "black" },
     { label: "Dataset", url: "#", icon: "Dataset", color: "green" },
     { label: "Video", url: "assets/demo_video.mp4", icon: "Video", color: "orange" },
     { label: "Poster", url: "assets/posters/eccv24.pdf", icon: "Poster", color: "purple" }

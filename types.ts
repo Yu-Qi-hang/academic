@@ -75,4 +75,5 @@ export interface PaperData {
   links: ExternalLink[];
   sections: PaperSection[];
   bibtex: string;
+  star?: boolean;
 }

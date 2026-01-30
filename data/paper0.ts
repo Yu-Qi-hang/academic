@@ -6,6 +6,7 @@ export const paper0: PaperData = {
     name: "WWW 2026",
     link: "https://www2026.thewebconf.org/"
   },
+  star: true,
   authors: [
     { name: 'Qihang Yu', link: "#", affiliationIndices: [1], isEqualContribution: true},
     { name: 'Kairui Fu', link: "#", affiliationIndices: [1], isEqualContribution: true},

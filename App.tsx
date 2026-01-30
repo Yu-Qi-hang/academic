@@ -93,8 +93,8 @@ const App: React.FC = () => {
                         : 'text-gray-700 hover:bg-gray-50'
                     }`}
                   >
-                    <div className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">
-                      {paper.venue?.name}
+                    <div className="text-xs font-bold text-grey-500 uppercase tracking-wider mb-1">
+                      {paper.venue?.name}{paper.star && <span> ⭐️</span>}
                     </div>
                     <div className="font-medium line-clamp-2">
                       {paper.title}

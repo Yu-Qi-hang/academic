@@ -35,14 +35,14 @@ const Sidebar: React.FC<SidebarProps> = ({ papers, selectedPaperIndex, onSelectP
               )}
               
               {paper.venue && (
-                <div className={`text-[10px] font-bold uppercase tracking-wider mb-1 ${
+                <div className={`text-s font-bold uppercase tracking-wider mb-1 ${
                   selectedPaperIndex === idx ? 'text-blue-500' : 'text-gray-400'
                 }`}>
-                  {paper.venue.name}
+                  {paper.venue.name}{paper.star && <span> ⭐️</span>}
                 </div>
               )}
 
-              <div className="text-sm font-bold leading-snug line-clamp-2 serif-font">
+              <div className="text-lg font-bold leading-snug line-clamp-2 serif-font">
                 {paper.title}
               </div>
             </button>
