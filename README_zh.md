@@ -79,6 +79,15 @@ npm run dev
 ```
 访问 [http://localhost:5173](http://localhost:5173) 即可预览你的展示站。
 
+
+### 5. 部署上线
+
+支持任意静态网站托管服务：
+- GitHub Pages（推荐）
+- [Vercel](https://vercel.com)
+- [Netlify](https://netlify.com)
+
+> ✨ **小技巧**：如需自定义部署路径（如子目录），请修改 `vite.config.ts` 中的 `base` 配置。
 ---
 
 ## 📝 支持的内容类型
@@ -102,17 +111,6 @@ npm run dev
   text: "这是一个段落。\n它会保留换行符。"
 }
 ```
-
----
-
-## 🌍 部署上线
-
-支持任意静态网站托管服务：
-- GitHub Pages（推荐）
-- [Vercel](https://vercel.com)
-- [Netlify](https://netlify.com)
-
-> ✨ **小技巧**：如需自定义部署路径（如子目录），请修改 `vite.config.ts` 中的 `base` 配置。
 
 ---
 

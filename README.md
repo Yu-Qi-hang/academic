@@ -79,6 +79,13 @@ npm run dev
 ```
 Open [http://localhost:5173](http://localhost:5173) to view your showcase.
 
+### 5. Deploy
+
+Deploy anywhere that supports static sites:
+- GitHub Pages (recommended)
+- [Vercel](https://vercel.com)
+- [Netlify](https://netlify.com)
+> ✨ **Pro Tip**: Customize the repository base by editing vite.config.ts.
 ---
 
 ## 📝 Content Types Supported
@@ -103,15 +110,6 @@ Example:
 }
 ```
 
----
-
-## 🌍 Deploy
-
-Deploy anywhere that supports static sites:
-- GitHub Pages (recommended)
-- [Vercel](https://vercel.com)
-- [Netlify](https://netlify.com)
-> ✨ **Pro Tip**: Customize the repository base by editing vite.config.ts.
 ---
 
 ## 📄 License
