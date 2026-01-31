@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
 import Section from './components/Section';
@@ -8,8 +8,13 @@ import { paper1 } from './data/paper1';
 import { example } from './data/example';
 import { Profile } from './types';
 
-const PAPERS = [paper0, paper1, example];
+// 👇 仅在开发环境导入生成器
+const PaperGenerator = import.meta.env.DEV 
+  ? React.lazy(() => import('./components/PaperGenerator'))
+  : null;
 
+const PAPERS = [paper0, paper1, example];
+// App.tsx
 const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
@@ -31,7 +36,23 @@ const App: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
   const paper = PAPERS[selectedPaperIndex];
-
+  // 👇 检查是否在生成器页面（通过 URL hash）
+  const isGeneratorPage = window.location.hash === '#generator/' || window.location.hash === '#generator';
+  if (import.meta.env.DEV && isGeneratorPage) {
+    return (
+      <React.Suspense fallback={<div className="p-10">Loading Generator...</div>}>
+        <PaperGenerator />
+        <div className="fixed bottom-4 right-4">
+          <a 
+            href="#/" 
+            className="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700"
+          >
+            ← Back to Showcase
+          </a>
+        </div>
+      </React.Suspense>
+    );
+  }
   return (
     <div className="flex flex-col md:flex-row bg-[#fafafa] min-h-screen">
       {/* 桌面端侧边栏 - 仅在非移动端显示 */}

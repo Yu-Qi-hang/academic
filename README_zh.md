@@ -67,7 +67,7 @@ yarn install
 ```
 
 ### 3. 添加你的内容
-- 在 `/data` 目录下编辑或新建文件（如 `my-paper.ts`）
+- 在 `/data` 目录下编辑或新建文件（如 `my-paper.ts`）;或者在dev模式（`npm run dev`）下访问[generator](http://localhost:5173/academic/#generator/)页面创建文件并下载
 - 按照 example.ts 的结构导出一个 PaperData 对象
 - 修改 App.tsx，导入并使用你的新论文数据
 

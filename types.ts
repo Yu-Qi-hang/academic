@@ -37,7 +37,7 @@ export interface ExternalLink {
 }
 
 export interface SectionContent {
-  type: ContentType;
+  type: ContentType|"TEXT"|"IMAGE"|"VIDEO"|"PDF"|"IMAGE_COMPARISON"|"IMAGE_GRID"|"CAROUSEL";
   title?: string;
   text?: string;
   src?: string;

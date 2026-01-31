@@ -67,7 +67,7 @@ yarn install
 ```
 
 ### 3. Add your content
-- Edit or create a new file in `/data` (e.g., `my-paper.ts`)
+- Edit or create a new file in `/data` (e.g., `my-paper.ts`) ; Or access the [generator](http://localhost:5173/academic/#generator/) page in dev mode (`npm run dev`) to create files and download them
 - Export a PaperData object following the structure in example.ts
 - Update App.tsx to import and use your paper data
 
